@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <div>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-success">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">NYKA</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,10 +12,10 @@ const Navbar = () => {
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="/">ADD POST</a>
-          <a class="nav-link" href="/search">SEARCH POST</a>
-          <a class="nav-link" href="/delete">DELETE POST</a>
-          <a class="nav-link" href="/view">VIEW POST</a> 
+          <Link class="nav-link active" aria-current="page" to="/">ADD POST</Link>
+          <Link class="nav-link" to="/search">SEARCH POST</Link>
+          <Link class="nav-link" to="/delete">DELETE POST</Link>
+          <Link class="nav-link" to="/view">VIEW POST</Link> 
         </div>
       </div>
     </div>
